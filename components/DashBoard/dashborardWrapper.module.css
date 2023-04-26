@@ -1,0 +1,10 @@
+
+.dashboard{
+ width: 80vw;
+ margin-left: 60px;
+ margin-right: 60px;
+
+}
+   
+   @media (max-width: 576px){
+   }

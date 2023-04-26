@@ -5,10 +5,12 @@ import Sidebar from "../../components/Sidebar";
 
 const WebsiteLayout = () => {
   return (
-    <div style={{ display: "flex" }}>
+  
+      <div style={{display: 'flex'}}>
       <Sidebar />
       <DashBoard />
-    </div>
+      </div>
+    
   );
 };
 

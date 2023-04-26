@@ -1,10 +1,13 @@
-import React from 'react'
-import DashBoardHeader from '../DashBoardHeader'
+import React from "react";
+import DashBoardHeader from "../DashBoardHeader";
+import styles from './dashborardWrapper.module.css'
 
 const DashBoard = () => {
   return (
-    <DashBoardHeader />
-  )
-}
+    <div className={styles.dashboard}>
+      <DashBoardHeader />
+    </div>
+  );
+};
 
-export default DashBoard
+export default DashBoard;
