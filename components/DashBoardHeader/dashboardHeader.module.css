@@ -1,0 +1,58 @@
+
+
+
+  
+    .dash {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .morning {
+    display: flex;
+    justify-content: space-between;
+    line-height: 22px;
+    
+  }
+  .morningP{
+    color: #31373D;
+     font-size: 14px;
+     font-weight: 400
+}
+  .morningH{
+    color: #131316; 
+    font-size: 24px;
+}
+  .dashDay {
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .dashDayR{
+    padding: 12px;
+    border: 1px solid #FF5403;
+    margin-right: 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF5403;
+    background-color: #FFDDCD;
+  }
+  .dashDayP{
+    padding: 12px;
+    border: 1px solid #eff1f6;
+    margin-right: 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+   .dashChartWrapper{
+    border: 1px solid #EFF1F6;
+    padding-left: 24px;
+    padding-right: 26px;
+    padding-top: 32px;
+}
+.chatTop{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
