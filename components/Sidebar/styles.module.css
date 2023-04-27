@@ -1,0 +1,82 @@
+.sideBar {
+  height: 90vh;
+  padding-left: 0.4em;
+  transition: all 0.3s ease;
+  width: 120px;
+}
+.togleAvtive {
+  height: 90vh;
+  width: 60px;
+  padding-left: 0.4em;
+  transition: all 0.3s ease;
+}
+
+.togleAvtive > .navItem > .navList h5 {
+  display: none;
+}
+.togleAvtive > .navItem > p {
+  display: none;
+}
+.togleAvtive > .navItem > .navActive h5 {
+  display: none;
+}
+
+.togleAvtive > .navItem {
+  align-items: center;
+}
+.navContent {
+  text-align: "center";
+  justify-content: "flex-start";
+  display: "flex";
+  margin-left: "20px";
+  margin-top: "38px";
+}
+
+.navContent img {
+  width: 40px;
+  height: 40px;
+  color: #040404;
+  margin-bottom: 56px;
+  cursor: pointer;
+  margin-top: 38px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  padding: 0;
+  margin: 0;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5em;
+  font-family: "Söhne";
+  font-size: 16px;
+  line-height: 24px;
+  color: #4d5760;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.navActive {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5em;
+  height: 40px;
+  margin-bottom: 1em;
+  font-family: "Söhne";
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff5403;
+}
