@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./dashboardHeader.module.css";
 import Chart from "../Chart";
 
 const DashBoardHeader = () => {
+  const [active, setActive] = useState("5");
+
+  const handleActive = (e: any) => {
+    setActive(e.target.id);
+  };
   return (
     <div className={styles.dashWrapper}>
       <p className={styles.dash}> Dashboard</p>
@@ -16,12 +21,48 @@ const DashBoardHeader = () => {
       </div>
 
       <div className={styles.dashDay}>
-        <p className={styles.dashDayP}>1 Day</p>
-        <p className={styles.dashDayP}>3 Day</p>
-        <p className={styles.dashDayP}>7 Day</p>
-        <p className={styles.dashDayP}>30 Day</p>
-        <p className={styles.dashDayR}>All Time</p>
-        <p className={styles.dashDayP}>Custom Date</p>
+        <p
+          id="1"
+          className={active === "1" ? styles.dashDayR : styles.dashDayP}
+          onClick={handleActive}
+        >
+          1 Day
+        </p>
+        <p
+          id="2"
+          className={active === "2" ? styles.dashDayR : styles.dashDayP}
+          onClick={handleActive}
+        >
+          3 Day
+        </p>
+        <p
+          id="3"
+          className={active === "3" ? styles.dashDayR : styles.dashDayP}
+          onClick={handleActive}
+        >
+          7 Day
+        </p>
+        <p
+          id="4"
+          className={active === "4" ? styles.dashDayR : styles.dashDayP}
+          onClick={handleActive}
+        >
+          30 Day
+        </p>
+        <p
+          id="5"
+          className={active === "5" ? styles.dashDayR : styles.dashDayP}
+          onClick={handleActive}
+        >
+          All Time
+        </p>
+        <p
+          id="6"
+          className={active === "6" ? styles.dashDayR : styles.dashDayP}
+          onClick={handleActive}
+        >
+          Custom Date
+        </p>
       </div>
 
       <div className={styles.dashChartWrapper}>
@@ -40,8 +81,17 @@ const DashBoardHeader = () => {
         <p style={{ margin: 0, color: "#4D5760", fontSize: "14px" }}>
           All Time
         </p>
-        <p style={{ margin: 0, color: "#131316", fontSize: "48px", fontWeight: 'bold' }}>500</p>
-        <Chart/>
+        <p
+          style={{
+            margin: 0,
+            color: "#131316",
+            fontSize: "48px",
+            fontWeight: "bold",
+          }}
+        >
+          500
+        </p>
+        <Chart />
       </div>
     </div>
   );
