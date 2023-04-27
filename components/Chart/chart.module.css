@@ -1,0 +1,66 @@
+.line {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2em;
+  }
+  .line canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+  .bottomChart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .chartTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  
+  .chartTitle h2 {
+    font-family: "Söhne";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #131316;
+  }
+  .chartTitle p {
+    font-family: "Söhne";
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #ff5403;
+  }
+  
+  .chartMap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 226.74px;
+    width: 100%;
+  }
+  .bottomChartCon {
+    width: 400px;
+  }
+  
+  .chartMap ul {
+    margin: 0;
+    padding: 0;
+  }
+  .chartMap ul li {
+    font-family: "Söhne";
+    font-size: 16px;
+    line-height: 140%;
+    color: #131316;
+    list-style: none;
+  }
+  .chartMap canvas {
+    width: 160.56px !important;
+    height: 160.56px !important;
+  }
